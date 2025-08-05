@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A PROPOS</title>   
+</head>
+<body>  
+
+        <section id="about"
+            class="about-section animate">
+            <div class="container">
+            <h2>A propos </h2>
+            <div class="about-content">
+                <img src="IMG-20250721-WA0000.jpg" alt="logo NEPCO">
+                <div class="text">
+                    <div class="overlay"
+                    id="welcomepopup">
+                    <h2>bienvenue chez NEPCO !</h2>
+                    <P> merci de visiter notre site decouvrez nos services en consulting,marketinget developpement
+                        commercial
+                    </P>
+                    <div class="popup" id="popup">
+                        <div class="popup-content">
+                    <button class="close-btn"
+                    onclick="closepopup()">fermer</button>
+                           
+        <p><strong>NEPCO</strong>
+        Bienvenue dans notre site vitrine ! nous sommes une entreprise camerounaise
+    dynamique spécialisée dans les services commerciaux, le marketing et le dévèloppement de solutions sur mesure
+Notre entreprise accompagne les clients vers le succes en leur offrant des préstations de qualite adaptes a leur besoins.
+</p>
+<p>
+    Notre mission est d accompagner les entreprises dans leur croissances grace à des solutionspersonnqlisées
+    et innovantes. nous croyons en un servicesclient de qualité en la rigueur professionnelle et en la creativité
+    stratégique.     
+</p>
+<p>
+    Avec une équipe jeune et dynamique, nous plaçons l'excellence au coeur de nos actions . faites confiance 
+    à NEPCO pour propulser votre activité vers de nouveaux sommets
+</p>
+</section>
+</div>
+<script>
+    window.onload=function(){
+        setTimeout(function(){
+            document.getElementById("welcomepopup").classList.add('active');
+        },2000);
+    
+    }
+    function closepopup(){
+        document.getElementById("welcomepopup ").classlist.remove("ative");
+    }
+    
+</script>
+<script>
+    const element=
+    document.querySelectorAll('.animate')
+    ;
+    const showOnScroll=() =>{
+        element. forEach(el=>{
+            const rect= 
+            el.getBoundingClientRect();
+            if (rect. stop<
+                windows.innerheight -100) {
+                    el.classList.add('show');           
+    }
+
+        });
+    };
+    window.addEventListener('scroll,showOnScroll');
+    window.addEventListener('load,showOnScroll');
+    document.addEventListener('DOMContent loaded',showOnScroll);
+    window.addEventListener('scroll',function () {
+        var section=
+        document.querySelector('.about-section'
+
+        );
+        var position=
+        section.getBoundingClientRect().top;
+        var screenposition=
+        window.innerHeight/ 1.3;
+        if(position<screenposition){
+            section.classList.add('animate-visible');
+
+        }
+    }
+)
+</script>
+<script src="script.js">
+
+</script>
+
+        
+    
+    
+
+
+    <img src="vir/Screenshot_20250723-211405_1.png" alt="avatar" width="20%">
+    
+</div>
+<div class="a propos">
+    <section class="video section"></section>
+    <video controls src="IMG/VID-20250722-WA0116.mp4"  width="20%">
+
+    </video>
+
+    </video>
+
+</div>
+</body>
+
+
+
+</html>
